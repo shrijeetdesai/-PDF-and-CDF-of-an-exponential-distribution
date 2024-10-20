@@ -20,7 +20,7 @@ x: A grid of values from 0 to 5, used to compute the PDF and CDF.
 
 ### Probability Density Function (PDF)
 
-\( f(x) = \frac{1}{\mu} e^{-x / \mu} \)
+$\( f(x) = \frac{1}{\mu} e^{-x / \mu} \)
 
 where:
 - \( \mu \) is the mean of the distribution.
