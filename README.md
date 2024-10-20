@@ -18,6 +18,27 @@ mu: The mean of the exponential distribution. In this case, it is set to 2/3.
 nsample: The number of random samples generated from the exponential distribution. Set to 10^6 (1 million samples).
 x: A grid of values from 0 to 5, used to compute the PDF and CDF.
 
+### Probability Density Function (PDF)
+
+\( f(x) = \frac{1}{\mu} e^{-x / \mu} \)
+
+where:
+- \( \mu \) is the mean of the distribution.
+- \( x \geq 0 \).
+
+### Cumulative Distribution Function (CDF)
+
+\( F(x) = 1 - e^{-x / \mu} \)
+
+### Inverse Transform Sampling
+
+To generate random samples \( X \) from the Exponential Distribution:
+
+\( X = -\mu \ln(U) \)
+
+where \( U \) is a uniformly distributed random number in \([0, 1]\).
+
+
 # Running the code
 To execute the code, simply run the Python script:
 python exponential_distribution.py
@@ -28,4 +49,6 @@ A combined plot showing the PDF (red) and CDF (blue) of the exponential distribu
 A comparison between the sampled data (histogram) and the theoretical PDF (line plot).
 A bar plot of the sampled data with the theoretical PDF overlaid.
 The first figure is also saved as exponential.pdf in the current directory.
+
+
 
