@@ -20,23 +20,23 @@ x: A grid of values from 0 to 5, used to compute the PDF and CDF.
 
 ### Probability Density Function (PDF)
 
-$'\( f(x) = \frac{1}{\mu} e^{-x / \mu} \)'$
+$\( f(x) = \frac{1}{\mu} e^{-x / \mu} \)$
 
 where:
-- \( \mu \) is the mean of the distribution.
-- \( x \geq 0 \).
+- $\( \mu \)$ is the mean of the distribution.
+- $\( x \geq 0 \)$.
 
 ### Cumulative Distribution Function (CDF)
 
-\( F(x) = 1 - e^{-x / \mu} \)
+$\( F(x) = 1 - e^{-x / \mu} \)$
 
 ### Inverse Transform Sampling
 
-To generate random samples \( X \) from the Exponential Distribution:
+To generate random samples $\( X \)$ from the Exponential Distribution:
 
-\( X = -\mu \ln(U) \)
+$\( X = -\mu \ln(U) \)$
 
-where \( U \) is a uniformly distributed random number in \([0, 1]\).
+where $\( U \)$ is a uniformly distributed random number in $\([0, 1]\)$.
 
 
 # Running the code
